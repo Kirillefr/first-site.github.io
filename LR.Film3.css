@@ -1,0 +1,478 @@
+*{ /* данные параметры будут применены ко всему проекту */
+	margin:0;
+	padding:0;
+	font-family: sans-serif;
+	list-style: none;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+	margin:0;
+	color:white;
+	font-size: 25px;
+	
+}
+
+header { /* оформление header */
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+
+	padding: 13px;
+	box-shadow: 0 5px 10px #000;
+          z-index:1000;
+
+    background: url("https://i.gifer.com/GEBR.gif");
+    background-size: 1930px 100px;
+}
+
+header .logo /* Поведение надписи "Логотип"*/{
+	color: #000;
+	transition: .5s;
+    margin-left: 105px;
+    transition: color .1s linear;
+    font-size: 25px;
+	font-weight: 900;
+}
+	header .logo:hover{
+		color: white;
+	}
+	/* header .logo:hover:after{
+		opacity: 1;
+	}
+		header .logo:after{
+			content: "";
+			display: block;
+			width: 100%;
+			height: 3px;
+			
+			
+			background-color: white;
+			opacity:0;
+			
+			position: absolute;
+			top: 100%;
+			left: 0;
+			z-index: 1;
+			
+			transition: opacity .1s linear;
+			
+		} */
+
+header nav ul li { /* размещение меню */
+	position: relative;
+	float: left;
+}
+header nav ul li a{ /* поведение ссылок (надписей меню)*/
+	padding: 15px;
+	color: #000;
+	font-size: 25px;
+    font-weight: 900;
+	display: block;
+	margin-left: 125px;
+	transition: color .1s linear;
+}
+
+header nav ul li a:hover{ /* эффект при наведении на меню */
+	color: white;
+}
+
+
+nav ul li ul { /* Поведение меню 2-го порядка (подразделы)*/
+	position: absolute;
+	left: 0px;
+	width: 350px;
+	background: url("https://i.gifer.com/GEBR.gif");
+	display:none;
+	
+}
+nav ul li ul li{ /* рамка меню*/
+	width: 100%;
+	border: 1.5px solid rgb(0, 0, 0);
+}
+
+nav ul li:hover > ul{ /* раскрытие меню при наведении*/
+	display: initial;
+}
+
+
+/* .baner{
+	font-family: Arial;
+	font-size: 25px;
+	font-weight: 850;
+	min-height: 75px;
+	box-shadow: 0px 5px 10px #000000;
+	margin:0;
+	
+	
+	display: flex;
+
+	align-items: center;
+	
+	background: url("https://i.gifer.com/GEBR.gif") no-repeat;
+	background-size: 1930px 100px;
+
+	
+	
+}
+
+.title{
+	color:black;
+	align-items: center;
+				display: inline-block;
+			vertical-align: top;
+			margin-left: 105px;
+	
+	transition: color .1s linear;
+	
+	position: relative;
+}
+	.title:hover{
+		color: white;
+	}
+	.title:hover:after{
+		opacity: 1;
+	}
+		.title:after{
+			content: "";
+			display: block;
+			width: 100%;
+			height: 3px;
+			
+			
+			background-color: white;
+			opacity:0;
+			
+			position: absolute;
+			top: 100%;
+			left: 0;
+			z-index: 1;
+			
+			transition: opacity .1s linear;
+			
+		}
+			.title-text{
+				
+			}
+				.title text1{
+					
+				} */
+
+
+
+
+html{
+	background: url("https://png.pngtree.com/thumb_back/fw800/background/20230527/pngtree-flame-letter-z-surrounded-by-fire-image_2696833.jpg") center no-repeat;
+	background-size: 100%;
+	height: 1210px;
+	margin:0;
+	background-color: black;
+	
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin:0;
+	
+}
+body{
+	margin:0;
+}
+
+
+
+	.img{
+		margin-left: 105px;
+		margin-top: 170px;
+		line-height: 1.5;
+	}
+		.text_1{
+			position: absolute;
+			color: white;
+			font-family: Arial;
+			font-size: 18px;
+			
+			margin-left: 415px;
+			margin-top: -4px;
+			
+			line-height: 2.235;
+			
+			opacity: 0.56;
+
+		}
+			.text_2{
+				position: absolute;
+				color: white;
+				font-family: Arial;
+				font-size: 18px;
+				
+				margin-left: 635px;
+				margin-top: -4px;
+				
+				line-height: 2.235;
+			}
+				.text_3{
+					font-family: Arial;
+					font-size: 28px;
+					opacity: 0.56;
+				}
+				.text_4{
+					font-family: Arial;
+					font-size: 18px;
+				}
+				
+	
+	.vid{
+		margin-left: 105px;
+		Margin-top: 25px;
+	}
+	
+	.container{
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 15px;
+	}
+	
+.modal{
+	font-size: 27px;
+	font-weight: 150;
+	line-height: 2;
+	
+	
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,.3);
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	overflow-y: auto;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .3s, visibility .3s;
+	
+	
+}
+
+.modal_window{
+	position: relative;
+	width: 300px;
+	max-width: 300px;
+	height: 235px;
+	padding: 115px;
+	z-index: 1;
+	background: url(https://i.gifer.com/2M2T.gif) no-repeat;
+	background-size: 165%;
+	box-shadow: 8px 9px 22px -5px rgba(0,0,0,0.59);
+	border-radius: 45px;
+	
+	
+}
+
+.modal_close-btn{
+	padding: 5px;
+	position: absolute;
+	top: 15px;
+	right: 22px;
+	opacity: 0.7;
+}
+	
+	.modal_close-btn:hover{
+		opacity: 1;
+}
+
+
+.open{
+	visibility: visible;
+	opacity: 1;
+}
+
+.zagolovok{
+	color: #a1a1a1;
+}
+
+	
+	.modal2{
+	font-size: 27px;
+	font-weight: 150;
+	line-height: 2;
+	
+	
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,.3);
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	overflow-y: auto;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .3s, visibility .3s;
+	
+	
+}
+
+.modal_window2{
+	position: relative;
+	width: 300px;
+	max-width: 300px;
+	height: 580px;
+	padding: 115px;
+	z-index: 1;
+	background: url(https://i.gifer.com/2M2T.gif) no-repeat;
+	background-size: 275%;
+	box-shadow: 8px 9px 22px -5px rgba(0,0,0,0.59);
+	border-radius: 45px;
+	
+	margin-top: 80px;
+}
+
+.modal_close-btn2{
+	padding: 5px;
+	position: absolute;
+	top: 15px;
+	right: 22px;
+	opacity: 0.7;
+}
+	
+	.modal_close-btn:hover2{
+		opacity: 1;
+}
+
+
+.open2{
+	visibility: visible;
+	opacity: 1;
+}
+
+.zagolovok2{
+	color: #a1a1a1;
+}
+
+	.modal3{
+	font-size: 27px;
+	font-weight: 150;
+	line-height: 2;
+	
+	
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,.3);
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	overflow-y: auto;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .3s, visibility .3s;
+	
+	
+}
+
+.modal_window3{
+	position: relative;
+	width: 300px;
+	max-width: 300px;
+	height: 280px;
+	padding: 115px;
+	z-index: 1;
+	background: url(https://i.gifer.com/2M2T.gif) no-repeat;
+	background-size: 175%;
+	box-shadow: 8px 9px 22px -5px rgba(0,0,0,0.59);
+	border-radius: 45px;
+	
+	margin-top: 80px;
+}
+
+.modal_close-btn3{
+	padding: 5px;
+	position: absolute;
+	top: 15px;
+	right: 22px;
+	opacity: 0.7;
+}
+	
+	.modal_close-btn:hover3{
+		opacity: 1;
+}
+
+
+.open3{
+	visibility: visible;
+	opacity: 1;
+}
+
+.zagolovok3{
+	color: #a1a1a1;
+}
+
+	.modal4{
+	font-size: 27px;
+	font-weight: 150;
+	line-height: 2;
+	
+	
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,.3);
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	overflow-y: auto;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .3s, visibility .3s;
+	
+	
+}
+
+.modal_window4{
+	position: relative;
+	width: 300px;
+	max-width: 300px;
+	height: 580px;
+	padding: 115px;
+	z-index: 1;
+	background: url(https://i.gifer.com/2M2T.gif) no-repeat;
+	background-size: 275%;
+	box-shadow: 8px 9px 22px -5px rgba(0,0,0,0.59);
+	border-radius: 45px;
+	
+	margin-top: 80px;
+}
+
+.modal_close-btn4{
+	padding: 5px;
+	position: absolute;
+	top: 15px;
+	right: 22px;
+	opacity: 0.7;
+}
+	
+	.modal_close-btn:hover4{
+		opacity: 1;
+}
+
+
+.open4{
+	visibility: visible;
+	opacity: 1;
+}
+
+.zagolovok4{
+	color: #a1a1a1;
+}

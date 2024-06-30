@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+		<head>
+			<meta charset="UFT-8">
+			<link href="LR.TVSHOWS.css" rel="stylesheet" type="text/css"/>
+			<title>ZTVShows</title>
+		</head>
+	<body>
+		<header class="header">
+			<a href="index.html" class="logo">ZFilm.RU</a>    
+				<nav class="nav">
+					<ul>
+						<li><a href="LR.MOVIES.html">Фильмы</a>
+							<ul>
+								<li><a href="LR.Film1.html">Зeлёный слоник</a></li>
+								<li><a href="LR.Film2.html">Гитлер, капут!</a></li>
+							</ul>
+						</li>
+						<li><a href="LR.TVSHOWS.html">Сериалы</a>
+							<ul>
+								<li><a href="LR.Film3.html">физрук</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav> 
+				<button class="button" id="open-modal-btn">АВТОРИЗАЦИЯ</button>	           
+		</header>
+		
+		<div class="modal" id="my-modal">
+			<div class="modal_window">
+				<h4 class="zagolovok">Авторизация</h4>
+				<button class="modal_close-btn" id="close-my-modal-btn">X</button>
+					<center class="avt">
+						<form action="aut.php" method="post"> 
+						<input type="text" class = "form-control" name="login" 
+						id="login" placeholder="Введите логин"><br>
+						<input type="password" class = "form-control" name="pass"
+						id="pass" placeholder="Введите пароль"><br>
+						<button class="btn btn-success" 
+						type = "submit">Отправить</button> 
+					</center>
+					
+			</div>
+		</div>
+			<div id="image3">
+				<a href="LR.Film3.html"> <img src="https://b1.filmpro.ru/c/514957.jpg" height="600px" ></br>
+					<a href="LR.Film3.html"> 
+						Физрук</br>
+						2014</br>
+					</a>
+				</a>
+			</div>
+			<script def src="LR.Film3.js"></script>
+	</body>
+</html>
