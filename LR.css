@@ -1,0 +1,452 @@
+*{ /* данные параметры будут применены ко всему проекту */
+	margin:0;
+	padding:0;
+	font-family: sans-serif;
+	list-style: none;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+	margin:0;
+	color:white;
+	font-size: 25px;
+	
+}
+
+
+header { /* оформление header */
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+
+	padding: 13px;
+	box-shadow: 0 5px 10px #000;
+          z-index:1000;
+
+    background: url("https://i.gifer.com/GEBR.gif");
+    background-size: 1930px 100px;
+}
+
+header .logo /* Поведение надписи "Логотип"*/{
+	color: #000;
+	transition: .5s;
+    margin-left: 105px;
+    transition: color .1s linear;
+    font-size: 25px;
+	font-weight: 900;
+}
+	header .logo:hover{
+		color: white;
+	}
+	/* header .logo:hover:after{
+		opacity: 1;
+	}
+		header .logo:after{
+			content: "";
+			display: block;
+			width: 100%;
+			height: 3px;
+			
+			
+			background-color: white;
+			opacity:0;
+			
+			position: absolute;
+			top: 100%;
+			left: 0;
+			z-index: 1;
+			
+			transition: opacity .1s linear;
+			
+		} */
+
+header nav ul li { /* размещение меню */
+	position: relative;
+	float: left;
+}
+header nav ul li a{ /* поведение ссылок (надписей меню)*/
+	padding: 15px;
+	color: #000;
+	font-size: 25px;
+    font-weight: 900;
+	display: block;
+	margin-left: 125px;
+	transition: color .1s linear;
+}
+
+header nav ul li a:hover{ /* эффект при наведении на меню */
+	color: white;
+}
+
+
+nav ul li ul { /* Поведение меню 2-го порядка (подразделы)*/
+	position: absolute;
+	left: 0px;
+	width: 350px;
+	background: url("https://i.gifer.com/GEBR.gif");
+	display:none;
+	
+}
+nav ul li ul li{ /* рамка меню*/
+	width: 100%;
+	border: 1.5px solid rgb(0, 0, 0);
+}
+
+nav ul li:hover > ul{ /* раскрытие меню при наведении*/
+	display: initial;
+}
+
+
+
+/* .baner{
+	position: relative;
+	font-family: Arial;
+	font-size: 25px;
+	font-weight: 850;
+	min-height: 75px;
+	box-shadow: 0px 5px 10px #000000;
+	margin:0;
+	
+	
+	display: flex;
+
+	align-items: center;
+	
+	background: url("https://i.gifer.com/GEBR.gif");
+	background-size: 1930px 100px;
+	
+	
+}
+
+.title{
+	color:black;
+	align-items: center;
+				display: inline-block;
+			vertical-align: top;
+			margin-left: 105px;
+			padding: 10px;
+	
+	transition: color .1s linear;
+	position: relative;
+}
+	.title:hover{
+		color: white;
+	}
+	.title:hover:after{
+		opacity: 1;
+	}
+		.title:after{
+			content: "";
+			display: block;
+			width: 100%;
+			height: 3px;
+			
+			
+			background-color: white;
+			opacity:0;
+			
+			position: absolute;
+			top: 100%;
+			left: 0;
+			z-index: 1;
+			
+			transition: opacity .1s linear;
+			
+		}
+			.title-text{
+				
+			}
+				.title text1{
+					
+				} */
+
+
+html{
+	background: url("https://png.pngtree.com/thumb_back/fw800/background/20230527/pngtree-flame-letter-z-surrounded-by-fire-image_2696833.jpg") center no-repeat;
+	background-size: 100%;
+	height: 1720px;
+	margin:0;
+	background-color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin:0;
+	
+}
+body{
+	margin:0;
+}
+	#image1{
+		transform: scale(1);
+		transition: .5s all;
+		margin-left: 105px;
+		margin-top: 190px;
+		margin-right: 1590px;
+		font-family: Arial;
+	}
+		#image1:hover{
+			transform: rotate(360deg) scale(1.010);
+		
+		}
+			
+	#image2{
+		position: absolute;
+		
+		transform: scale(1);
+		transition: .5s all;
+		margin-left: 750px;
+		margin-top: 0px;
+		margin-right: 1590px;
+		font-family: Arial;
+	}
+		#image2:hover{
+			transform: rotate(360deg) scale(1.010);
+		
+		}
+	
+	#image3{
+		position: absolute;
+		
+		transform: scale(1);
+		transition: .5s all;
+		margin-left: 1395px;
+		margin-top: 0px;
+		margin-right: 1590px;
+		font-family: Arial;
+	}
+		#image3:hover{
+			transform: rotate(360deg) scale(1.010);
+		
+		}
+			
+.avt{
+	position: absolute;
+	margin-left: 61px;
+	margin-top: -10px;
+	
+}	
+.button{
+	font-family: Arial;
+	font-size: 25px;
+	font-weight: 850;
+	padding: 10px;
+	background-color:  rgba(0, 0, 0, 0);
+	margin-left: 800px;
+	border: none;
+
+	transition: color .1s linear;
+}
+.button:hover{
+	color:white;
+}
+.modal{
+	font-size: 27px;
+	font-weight: 150;
+	line-height: 2;
+	
+	
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,.3);
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	overflow-y: auto;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .3s, visibility .3s;
+	
+	
+}
+
+.modal_window{
+	position: relative;
+	width: 300px;
+	max-width: 300px;
+	height: 300px;
+	padding: 115px;
+	z-index: 1;
+	background: url(https://i.gifer.com/2M2T.gif) no-repeat;
+	background-size: 180%;
+	box-shadow: 8px 9px 22px -5px rgba(0,0,0,0.59);
+	border-radius: 45px;
+	
+	
+}
+
+.modal_close-btn{
+	padding: 5px;
+	position: absolute;
+	top: 15px;
+	right: 22px;
+	opacity: 0.7;
+}
+	
+	.modal_close-btn:hover{
+		opacity: 1;
+}
+
+
+.open{
+	visibility: visible;
+	opacity: 1;
+}
+.zagolovok{
+	color: #a1a1a1;
+	font-family: Arial;
+	font-size: 30px;
+	font-weight: 850;
+	text-align: center;
+	margin-top: -75px;
+}
+
+/*  */
+
+#slider { /*положение слайдера*/
+    position: relative;
+	text-align: center;
+    top: 10px;
+	align-items: center;
+}
+
+#slider{ /*центровка слайдера*/
+	margin: 0 auto;
+}
+
+#slides article{ /*все изображения справа друг от доруга*/
+	width: 20%;
+	float: left;
+}
+
+#slides .image{ /*устанавливает общий размер блока с изображениями*/
+	width: 500%;
+	line-height: 0;
+}
+
+#overflow{ /*сркывает все, что находится за пределами этого блока*/
+	width: 100%;
+	overflow: hidden;
+}
+
+article img{ /*размер изображений слайдера*/
+	width: 100%;
+}
+
+#desktop:checked ~ #slider{ /*размер всего слайдера*/
+	max-width: 560px; /*максимальнная длинна*/
+}
+
+/*настройка переключения и положения для левой стрелки*/
+/*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
+#switch1:checked ~ #controls label:nth-child(5), 
+#switch2:checked ~ #controls label:nth-child(1),
+#switch3:checked ~ #controls label:nth-child(2),
+#switch4:checked ~ #controls label:nth-child(3),
+#switch5:checked ~ #controls label:nth-child(4){
+	background: url('prev.png') no-repeat; /*заливка фона картинкой без повторений*/
+	float: left;
+	margin: 0 0 0 -84px; /*сдвиг влево*/
+	display: block;
+	height: 68px;
+	width: 68px;
+}
+
+/*настройка переключения и положения для правой стрелки*/
+#switch1:checked ~ #controls label:nth-child(2), 
+#switch2:checked ~ #controls label:nth-child(3),
+#switch3:checked ~ #controls label:nth-child(4),
+#switch4:checked ~ #controls label:nth-child(5),
+#switch5:checked ~ #controls label:nth-child(1){
+	background: url('next.png') no-repeat; /*заливка фона картинкой без повторений*/
+	float: right;
+	margin: 0 -84px 0 0; /*сдвиг вправо*/
+	display: block;
+	height: 68px;
+	width: 68px;
+}
+
+label, a{ /*при наведении на стрелки или переключатели - курсор изменится*/
+	cursor: pointer;
+}
+
+.all input{ /*скрывает стандартные инпуты (чекбоксы) на странице*/
+	display: none;
+}
+
+/*позиция изображения при активации переключателя*/
+#switch1:checked ~ #slides .image{
+	margin-left: 0;
+}
+
+#switch2:checked ~ #slides .image{
+	margin-left: -100%;
+}
+
+#switch3:checked ~ #slides .image{
+	margin-left: -200%;
+}
+
+#switch4:checked ~ #slides .image{
+	margin-left: -300%;
+}
+
+#switch5:checked ~ #slides .image{
+	margin-left: -400%;
+}
+
+#controls{ /*положение блока всех управляющих элементов*/
+	margin: -55% 0 0 0;
+	width: 100%;
+	height: 50px;
+}
+
+#active label{ /*стиль отдельного переключателя*/
+	border-radius: 10px; /*скругление углов*/
+	display: inline-block; /*расположение в строку*/
+	width: 15px;
+	height: 15px;
+	background: #bbb;
+}
+
+#active{ /*расположение блока с переключателями*/
+	margin: 53% 0 0;
+	text-align: center;
+}
+
+#active label:hover{ /*поведение чекбокса при наведении*/
+	background: #76c8ff;
+	border-color: #777 !important; /*выполнение в любом случае*/
+}
+
+/*цвет активного лейбла при активации чекбокса*/
+#switch1:checked ~ #active label:nth-child(1),
+#switch2:checked ~ #active label:nth-child(2),
+#switch3:checked ~ #active label:nth-child(3),
+#switch4:checked ~ #active label:nth-child(4),
+#switch5:checked ~ #active label:nth-child(5){
+	background: #18a3dd;
+	border-color: #18a3dd !important;
+}
+
+#slides .image{ /*анимация пролистывания изображений*/
+	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+#controls label:hover{ /*прозрачность стрелок при наведении*/
+	opacity: 0.6;
+}
+
+#controls label{ /*прозрачность стрелок при отводе курсора*/
+	transition: opacity 0.2s ease-out;
+}
+
+.tab{
+	margin-bottom: 120px;
+}
